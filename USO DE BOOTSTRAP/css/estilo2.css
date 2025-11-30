@@ -1,0 +1,44 @@
+body {
+    background: #f5f7fa;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+/* --- CARRUSEL SENCILLO --- */
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+/* Tamaño pequeño del carrusel */
+.carousel-item {
+    height: 300px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* --- CONTROLES --- */
+.carousel-control-prev,
+.carousel-control-next {
+    width: auto;     /* Default */
+    height: auto;    /* Default */
+    background: none; /* SIN fondo circular */
+}
+
+/* Quitar botones redondos si Bootstrap los agrega */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Blanco sobre fondo oscuro de la imagen */
+}
+
+/* --- INDICADORES --- */
+.carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}

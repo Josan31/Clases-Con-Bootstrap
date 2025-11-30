@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    padding: 20px;
+}
+
+/* Título centrado */
+.titulo {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* --- MASONRY GRID --- */
+.masonry {
+    columns: 3;              /* Número de columnas */
+    column-gap: 15px;        /* Separación entre columnas */
+}
+
+.masonry img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    display: block;
+    break-inside: avoid;     /* Evita cortes feos entre columnas */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Versión responsive */
+@media (max-width: 900px) {
+    .masonry {
+        columns: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    .masonry {
+        columns: 1;
+    }
+}
